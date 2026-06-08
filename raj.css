@@ -1,0 +1,27 @@
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body { font-family: 'Outfit', sans-serif; transition: background-color 0.8s ease, color 0.3s ease; }
+    .skill-card { cursor: pointer; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+    .skill-card:hover { transform: translateY(-8px) scale(1.03); }
+    .skill-card:active { transform: scale(0.97); }
+    .roadmap-line { position: absolute; left: 50%; width: 4px; top: 0; bottom: 0; transform: translateX(-50%); }
+    .roadmap-node { animation: fadeSlide 0.6s ease forwards; opacity: 0; }
+    @keyframes fadeSlide { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+    @keyframes pulse-glow { 0%,100% { box-shadow: 0 0 20px rgba(255,255,255,0.1); } 50% { box-shadow: 0 0 40px rgba(255,255,255,0.25); } }
+    .floating { animation: float 3s ease-in-out infinite; }
+    .glow { animation: pulse-glow 2.5s ease-in-out infinite; }
+    .hero-text { font-family: 'Space Mono', monospace; }
+    .bg-particles { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+    .particle { position: absolute; border-radius: 50%; opacity: 0.15; animation: float 6s ease-in-out infinite; }
+    section { position: relative; z-index: 1; }
+    .theme-dark { background: #0f0f1a; color: #e8e8f0; }
+    .theme-sql { background: #1a0a2e; color: #e8d5ff; }
+    .theme-powerbi { background: #0a1e0a; color: #d5ffe0; }
+    .theme-python { background: #1e1a0a; color: #fff8d5; }
+    .theme-web { background: #0a1a1e; color: #d5f0ff; }
+    .theme-office { background: #1e0a0a; color: #ffd5d5; }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  
